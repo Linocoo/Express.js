@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+
+    <style>
+        body{
+            background: darkgray;
+        }
+        h1{
+            justify-content: center;
+            display: flex;
+        }
+        form {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);   
+            background-color: burlywood;
+            padding: 5rem 10rem;
+            border: cyan;
+            border-radius: 5px;
+        }
+
+        button {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 50px;
+            background-color: aquamarine;
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>EJS FORM</h1>
+    </div>
+
+    <form action="/contact" method="POST">
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+        </div>
+
+        <br>
+
+        <div>
+            <label for="user">User:</label>
+            <input type="text" name="user" id="user" />
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+        </div>
+        <br>
+        <div>
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time" />
+        </div>
+        <br>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" />
+        </div>
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
